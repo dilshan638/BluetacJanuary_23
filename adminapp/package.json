@@ -1,0 +1,64 @@
+{
+  "name": "adminapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/styles": "^4.11.1",
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.3",
+    "clsx": "^1.1.0",
+    "draft-js": "^0.11.5",
+    "jodit-react": "^1.0.42",
+    "joi-browser": "^13.4.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.24.0",
+    "mui-datatables": "^2.14.0",
+    "prismjs": "^1.19.0",
+    "react": "^16.8.4",
+    "react-big-calendar": "^0.24.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.8.4",
+    "react-draft-wysiwyg": "^1.14.4",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "recharts": "^1.8.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "shared-config"
+    ],
+    "rules": {
+      "additional-rule": "warn"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.js?(x)"
+        ],
+        "rules": {
+          "jsx-quotes": [
+            "error",
+            "prefer-single"
+          ]
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "https://asia-northeast1-bluetac-pro.cloudfunctions.net/api/"
+}

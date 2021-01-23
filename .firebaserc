@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "bluetac-pro"
+  },
+  "targets": {
+    "bluetac-pro": {
+      "hosting": {
+        "admin": [
+          "admin-bluetac"
+        ],
+        "portal": [
+          "bluetac-pro"
+        ]
+      }
+    }
+  }
+}

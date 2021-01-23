@@ -1,0 +1,47 @@
+{
+    "hosting": [{
+      "target": "portal",
+      "public": "portal/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/landing",
+          "function": "landing"
+        },
+        {
+          "source": "/cases{,/**}",
+          "destination": "/index.html"
+        },
+        {
+          "source": "/login{,/**}",
+          "destination": "/index.html"
+        },
+        {
+          "source": "/signup{,/**}",
+          "destination": "/index.html"
+        },
+        {
+          "source": "/profile{,/**}",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "admin",
+      "public": "adminapp/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [ {
+        "source": "**",
+        "destination": "/index.html"
+      } ]
+    }
+  ]
+  }
